@@ -1,11 +1,10 @@
-from search_def import *
 from graph_gen import *
-from show_path import *
 from graph_plot import *
+from search_def import *
+from show_path import *
 
 
 def gerar_grafo():
-
     global entry_n_psdp, entry_n_psdp_desconto, entry_razao_desconto, entry_n_conexoes, mapa
     num_psdp = int(entry_n_psdp.get())
     num_psdp_desconto = int(entry_n_psdp_desconto.get())
@@ -20,7 +19,6 @@ def gerar_grafo():
 
 
 def get_params_graph():
-
     global janela, entry_n_psdp, entry_n_psdp_desconto, entry_razao_desconto, entry_n_conexoes
     janela = tk.Tk()
     janela.title("Direção de Prova")

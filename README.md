@@ -32,7 +32,7 @@
 <div align="center">
 
 
-  <h3 align="center">Rally - Map Generator Coupled with Uninformed Search Algorithms</h3>
+<h3 align="center">Rally - Map Generator Coupled with Uninformed Search Algorithms</h3>
 
 </div>
 
@@ -61,11 +61,13 @@
 
 
 <!-- ABOUT THE PROJECT -->
+
 ## About The Project
 
 [![Product Name Screen Shot][product-screenshot]](https://example.com)
 
-This project is a map (graph) generator that incorporates uninformed search algorithms to find the optimal path between two nodes.
+This project is a map (graph) generator that incorporates uninformed search algorithms to find the optimal path between
+two nodes.
 
 ## Key Features
 
@@ -73,15 +75,12 @@ This project is a map (graph) generator that incorporates uninformed search algo
 
 - **Search Algorithms:** The program includes both uninformed and informed search algorithms.
 
-- **Map Visualization:** Users can visualize the map with or without the route calculated by the algorithm, along with the cost and the path to be taken.
-  
+- **Map Visualization:** Users can visualize the map with or without the route calculated by the algorithm, along with
+  the cost and the path to be taken.
+
 - **Random Values:** Each edge has predefined values randomly assigned to them.
 
-
-
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
-
-
 
 ### Built With
 
@@ -93,48 +92,56 @@ This project is a map (graph) generator that incorporates uninformed search algo
 
 
 <!-- GETTING STARTED -->
+
 ## Getting Started
 
 To execute the project, please follow the steps below:
 
 ### Prerequisites
 
-It is necessary to have the libraries used in the project installed in your environment. You can install them using pip and the dependency file provided within the project.
+It is necessary to have the libraries used in the project installed in your environment. You can install them using pip
+and the dependency file provided within the project.
+
 * Installing the libraries using pip:
   ```sh
   pip install -r requirements.txt
   ```
- * Creating a virtual environment:
-   ```sh
-   python -m venv venv_name
-   source venv_name/bin/activate
-   ```
+* Creating a virtual environment:
+  ```sh
+  python -m venv venv_name
+  source venv_name/bin/activate
+  ```
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 
 
 <!-- USAGE EXAMPLES -->
+
 ## Usage
 
 To start the application, run the main.py file:
+
 ```sh
   python main.py
 ```
 
 After execution, a window will appear on your screen, containing several fields that need to be filled out:
 
- * Número de PSDP: Defines the number of nodes the graph will have.
- * Razão de desconto: A decimal value that controls the discount for PSDP.
- * Número de caminhos para cada PSDP: The number of edges at each node.
+* Número de PSDP: Defines the number of nodes the graph will have.
+* Razão de desconto: A decimal value that controls the discount for PSDP.
+* Número de caminhos para cada PSDP: The number of edges at each node.
 
 ![alt text](/img/menu1.png)
 
-After filling in the fields, when you click on the 'Gerar Mapa' button, another window will open, displaying the created graph:
+After filling in the fields, when you click on the 'Gerar Mapa' button, another window will open, displaying the created
+graph:
 
 ![alt text](/img/mapa.png)
 
-When you click the 'Abrir Menu do Road Book' button, a third menu will open, allowing you to choose the starting and ending nodes (PSDP de largada e chegada, respectively), as well as the search algorithm that will be used to determine the optimal path.
+When you click the 'Abrir Menu do Road Book' button, a third menu will open, allowing you to choose the starting and
+ending nodes (PSDP de largada e chegada, respectively), as well as the search algorithm that will be used to determine
+the optimal path.
 
 ![alt text](/img/rodabook.png)
 
@@ -145,6 +152,7 @@ After selecting the desired search algorithm, the map with the optimal path will
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 <!-- LICENSE -->
+
 ## License
 
 Distributed under the MIT License. See `LICENSE.txt` for more information.
@@ -154,6 +162,7 @@ Distributed under the MIT License. See `LICENSE.txt` for more information.
 
 
 <!-- CONTACT -->
+
 ## Contact
 
 Guilherme Weber - weba.guilherme@outlook.com
@@ -165,18 +174,33 @@ Project Link: [https://github.com/glweber/busca_fsi](https://github.com/glweber/
 
 <!-- MARKDOWN LINKS & IMAGES -->
 <!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
+
 [contributors-shield]: https://img.shields.io/github/contributors/glweber/busca_fsi.svg?style=for-the-badge
+
 [contributors-url]: https://github.com/glweber/busca_fsi/graphs/contributors
+
 [forks-shield]: https://img.shields.io/github/forks/glweber/busca_fsi.svg?style=for-the-badge
+
 [forks-url]: https://github.com/glweber/busca_fsi/network/members
+
 [stars-shield]: https://img.shields.io/github/stars/glweber/busca_fsi.svg?style=for-the-badge
+
 [stars-url]: https://github.com/glweber/busca_fsi/stargazers
+
 [issues-shield]: https://img.shields.io/github/issues/glweber/busca_fsi.svg?style=for-the-badge
+
 [issues-url]: https://github.com/glweber/busca_fsi/issues
+
 [license-shield]: https://img.shields.io/github/license/glweber/busca_fsi.svg?style=for-the-badge
+
 [license-url]: https://github.com/glweber/busca_fsi/blob/master/LICENSE.txt
+
 [linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=for-the-badge&logo=linkedin&colorB=555
+
 [linkedin-url]: https://linkedin.com/in/glweber
+
 [product-screenshot]: src/img/screenshot.png
+
 [Python.lg]: https://img.shields.io/badge/python-3670A0?style=for-the-badge&logo=python&logoColor=ffdd54
+
 [Python_url]: www.python.org

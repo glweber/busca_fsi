@@ -1,7 +1,9 @@
 import heapq  # Standard Python library providing a binary heap-based priority queue.
 from collections import deque
 from typing import Tuple, List
+
 import networkx as nx
+
 
 def bfs(graph, start_node, goal_node):
     """
@@ -40,6 +42,7 @@ def bfs(graph, start_node, goal_node):
 
     return shortest_path
 
+
 def dfs(graph, start_node, goal_node):
     """
     Find the shortest path between the start and goal nodes using the depth-first search algorithm.
@@ -65,6 +68,7 @@ def dfs(graph, start_node, goal_node):
                 stack.append((neighbor, path + [neighbor]))
 
     return None
+
 
 def astar_search(graph, start, goal):
     """
@@ -105,6 +109,7 @@ def astar_search(graph, start, goal):
         path.reverse()
         return shortest_path_costs[goal], path
 
+
 def greedy_search(graph, start, goal):
     """
     Perform a greedy search in the graph.
@@ -135,6 +140,7 @@ def greedy_search(graph, start, goal):
 
     return None
 
+
 def min_path_heuristic(graph, node, goal):
     """
     Heuristic function that estimates the minimum path length between a node and the goal node.
@@ -152,6 +158,7 @@ def min_path_heuristic(graph, node, goal):
         return path_length(graph, path) + graph.nodes[node].get('time_discount', 0)
     except nx.NetworkXNoPath:
         return float('inf')
+
 
 def path_length(graph, path):
     """

@@ -1,7 +1,10 @@
 import random
+
 import networkx as nx
 
-def generate_rally_map(num_nodes: int, num_discounted_nodes: int, discount_ratio: float, max_connections: int) -> nx.Graph:
+
+def generate_rally_map(num_nodes: int, num_discounted_nodes: int, discount_ratio: float,
+                       max_connections: int) -> nx.Graph:
     """
     Generates a graph representing a rally map with time discounts at randomly selected checkpoints.
 
