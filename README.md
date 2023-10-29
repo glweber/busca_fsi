@@ -32,7 +32,7 @@
 <div align="center">
 
 
-<h3 align="center">Rally - Map Generator Coupled with Uninformed Search Algorithms</h3>
+<h3 align="center">Rally - Map Generator Coupled with Search Algorithms</h3>
 
 </div>
 
@@ -63,8 +63,6 @@
 <!-- ABOUT THE PROJECT -->
 
 ## About The Project
-
-[![Product Name Screen Shot][product-screenshot]](https://example.com)
 
 This project is a map (graph) generator that incorporates uninformed search algorithms to find the optimal path between
 two nodes.
