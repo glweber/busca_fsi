@@ -130,22 +130,31 @@ After execution, a window will appear on your screen, containing several fields 
 * Razão de desconto: A decimal value that controls the discount for PSDP.
 * Número de caminhos para cada PSDP: The number of edges at each node.
 
-![alt text](/img/menu1.png)
+<p align="center">
+  <img src="/img/menu1.png"/>
+</p>
+
 
 After filling in the fields, when you click on the 'Gerar Mapa' button, another window will open, displaying the created
 graph:
 
-![alt text](/img/mapa.png)
+<p align="center">
+  <img src="/img/mapa.png"/>
+</p>
 
 When you click the 'Abrir Menu do Road Book' button, a third menu will open, allowing you to choose the starting and
 ending nodes (PSDP de largada e chegada, respectively), as well as the search algorithm that will be used to determine
 the optimal path.
 
-![alt text](/img/roadbook.png)
+<p align="center">
+  <img src="/img/roadbook.png"/>
+</p>
 
 After selecting the desired search algorithm, the map with the optimal path will be displayed.
 
-![alt text](/img/path.png)
+<p align="center">
+  <img src="/img/path.png" />
+</p>
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
