@@ -1,7 +1,7 @@
-<!-- Improved compatibility of back to top link: See: https://github.com/glweber/python_dash/pull/73 -->
+<!-- Improved compatibility of back to top link: See: https://github.com/glweber/busca_fsi/pull/73 -->
 <a name="readme-top"></a>
 <!--
-*** Thanks for checking out the python_dash. If you have a suggestion
+*** Thanks for checking out the busca_fsi. If you have a suggestion
 *** that would make this better, please fork the repo and create a pull request
 *** or simply open an issue with the tag "enhancement".
 *** Don't forget to give the project a star!
@@ -32,11 +32,9 @@
 <div align="center">
 
 
-  <h3 align="center">Rally - Gerador de Mapas Atrelado a Algoritmos de Busca Desinformada</h3>
+  <h3 align="center">Rally - Map Generator Coupled with Uninformed Search Algorithms</h3>
 
 </div>
-
-
 
 <!-- TABLE OF CONTENTS -->
 <details>
@@ -52,15 +50,11 @@
       <a href="#getting-started">Getting Started</a>
       <ul>
         <li><a href="#prerequisites">Prerequisites</a></li>
-        <li><a href="#installation">Installation</a></li>
       </ul>
     </li>
     <li><a href="#usage">Usage</a></li>
-    <li><a href="#roadmap">Roadmap</a></li>
-    <li><a href="#contributing">Contributing</a></li>
     <li><a href="#license">License</a></li>
     <li><a href="#contact">Contact</a></li>
-    <li><a href="#acknowledgments">Acknowledgments</a></li>
   </ol>
 </details>
 
@@ -71,17 +65,18 @@
 
 [![Product Name Screen Shot][product-screenshot]](https://example.com)
 
-Este projeto é um gerador de mapas (grafos) que contém algoritmos de busca desinformada para encontrar o melhor caminho entre dois nós.
+This project is a map (graph) generator that incorporates uninformed search algorithms to find the optimal path between two nodes.
 
-## Recursos Principais
+## Key Features
 
-- **Visualização de Dados:** O dashboard oferece gráficos e tabelas interativas que mostram informações essenciais sobre as vendas do supermercado, incluindo tendências de vendas, categorias mais vendidas, desempenho ao longo do tempo e muito mais.
+- **Map Generation (Graph):** The map is generated based on user-defined parameters.
 
-- **Ferramentas de Análise:** Os usuários podem selecionar o mês desejado.
+- **Search Algorithms:** The program includes both uninformed and informed search algorithms.
 
-- **Interface Amigável:** A interface do dashboard é intuitiva e amigável, projetada para que tanto os usuários técnicos quanto não técnicos possam aproveitar ao máximo a visualização de dados.
+- **Map Visualization:** Users can visualize the map with or without the route calculated by the algorithm, along with the cost and the path to be taken.
+  
+- **Random Values:** Each edge has predefined values randomly assigned to them.
 
-- **Flexibilidade:** Este projeto é altamente flexível e personalizável, permitindo a expansão e a adição de recursos adicionais de acordo com as necessidades do usuário.
 
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
@@ -100,33 +95,19 @@ Este projeto é um gerador de mapas (grafos) que contém algoritmos de busca des
 <!-- GETTING STARTED -->
 ## Getting Started
 
-This is an example of how you may give instructions on setting up your project locally.
-To get a local copy up and running follow these simple example steps.
+To execute the project, please follow the steps below:
 
 ### Prerequisites
 
-This is an example of how to list things you need to use the software and how to install them.
-* npm
+It is necessary to have the libraries used in the project installed in your environment. You can install them using pip and the dependency file provided within the project.
+* Installing the libraries using pip:
   ```sh
-  npm install npm@latest -g
+  pip install -r requirements.txt
   ```
-
-### Installation
-
-_Below is an example of how you can instruct your audience on installing and setting up your app. This template doesn't rely on any external dependencies or services._
-
-1. Get a free API Key at [https://example.com](https://example.com)
-2. Clone the repo
+ * Creating a virtual environment:
    ```sh
-   git clone https://github.com/your_username_/Project-Name.git
-   ```
-3. Install NPM packages
-   ```sh
-   npm install
-   ```
-4. Enter your API in `config.js`
-   ```js
-   const API_KEY = 'ENTER YOUR API';
+   python -m venv venv_name
+   source venv_name/bin/activate
    ```
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
@@ -136,48 +117,32 @@ _Below is an example of how you can instruct your audience on installing and set
 <!-- USAGE EXAMPLES -->
 ## Usage
 
-Use this space to show useful examples of how a project can be used. Additional screenshots, code examples and demos work well in this space. You may also link to more resources.
+To start the application, run the main.py file:
+```sh
+  python main.py
+```
 
-_For more examples, please refer to the [Documentation](https://example.com)_
+After execution, a window will appear on your screen, containing several fields that need to be filled out:
 
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
+ * Número de PSDP: Defines the number of nodes the graph will have.
+ * Razão de desconto: A decimal value that controls the discount for PSDP.
+ * Número de caminhos para cada PSDP: The number of edges at each node.
 
+![alt text](/img/menu1.png)
 
+After filling in the fields, when you click on the 'Gerar Mapa' button, another window will open, displaying the created graph:
 
-<!-- ROADMAP -->
-## Roadmap
+![alt text](/img/mapa.png)
 
-- [x] Add Changelog
-- [x] Add back to top links
-- [ ] Add Additional Templates w/ Examples
-- [ ] Add "components" document to easily copy & paste sections of the readme
-- [ ] Multi-language Support
-    - [ ] Chinese
-    - [ ] Spanish
+When you click the 'Abrir Menu do Road Book' button, a third menu will open, allowing you to choose the starting and ending nodes (PSDP de largada e chegada, respectively), as well as the search algorithm that will be used to determine the optimal path.
 
-See the [open issues](https://github.com/glweber/python_dash/issues) for a full list of proposed features (and known issues).
+![alt text](/img/rodabook.png)
 
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
+After selecting the desired search algorithm, the map with the optimal path will be displayed.
 
-
-
-<!-- CONTRIBUTING -->
-## Contributing
-
-Contributions are what make the open source community such an amazing place to learn, inspire, and create. Any contributions you make are **greatly appreciated**.
-
-If you have a suggestion that would make this better, please fork the repo and create a pull request. You can also simply open an issue with the tag "enhancement".
-Don't forget to give the project a star! Thanks again!
-
-1. Fork the Project
-2. Create your Feature Branch (`git checkout -b feature/AmazingFeature`)
-3. Commit your Changes (`git commit -m 'Add some AmazingFeature'`)
-4. Push to the Branch (`git push origin feature/AmazingFeature`)
-5. Open a Pull Request
+![alt text](/img/path.png)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
-
-
 
 <!-- LICENSE -->
 ## License
@@ -191,44 +156,25 @@ Distributed under the MIT License. See `LICENSE.txt` for more information.
 <!-- CONTACT -->
 ## Contact
 
-Your Name - [@your_twitter](https://twitter.com/your_username) - email@example.com
+Guilherme Weber - weba.guilherme@outlook.com
 
-Project Link: [https://github.com/your_username/repo_name](https://github.com/your_username/repo_name)
-
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
-
-
-
-<!-- ACKNOWLEDGMENTS -->
-## Acknowledgments
-
-Use this space to list resources you find helpful and would like to give credit to. I've included a few of my favorites to kick things off!
-
-* [Choose an Open Source License](https://choosealicense.com)
-* [GitHub Emoji Cheat Sheet](https://www.webpagefx.com/tools/emoji-cheat-sheet)
-* [Malven's Flexbox Cheatsheet](https://flexbox.malven.co/)
-* [Malven's Grid Cheatsheet](https://grid.malven.co/)
-* [Img Shields](https://shields.io)
-* [GitHub Pages](https://pages.github.com)
-* [Font Awesome](https://fontawesome.com)
-* [React Icons](https://react-icons.github.io/react-icons/search)
+Project Link: [https://github.com/glweber/busca_fsi](https://github.com/glweber/busca_fsi)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
-
 
 
 <!-- MARKDOWN LINKS & IMAGES -->
 <!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
-[contributors-shield]: https://img.shields.io/github/contributors/glweber/python_dash.svg?style=for-the-badge
-[contributors-url]: https://github.com/glweber/python_dash/graphs/contributors
-[forks-shield]: https://img.shields.io/github/forks/glweber/python_dash.svg?style=for-the-badge
-[forks-url]: https://github.com/glweber/python_dash/network/members
-[stars-shield]: https://img.shields.io/github/stars/glweber/python_dash.svg?style=for-the-badge
-[stars-url]: https://github.com/glweber/python_dash/stargazers
-[issues-shield]: https://img.shields.io/github/issues/glweber/python_dash.svg?style=for-the-badge
-[issues-url]: https://github.com/glweber/python_dash/issues
-[license-shield]: https://img.shields.io/github/license/glweber/python_dash.svg?style=for-the-badge
-[license-url]: https://github.com/glweber/python_dash/blob/master/LICENSE.txt
+[contributors-shield]: https://img.shields.io/github/contributors/glweber/busca_fsi.svg?style=for-the-badge
+[contributors-url]: https://github.com/glweber/busca_fsi/graphs/contributors
+[forks-shield]: https://img.shields.io/github/forks/glweber/busca_fsi.svg?style=for-the-badge
+[forks-url]: https://github.com/glweber/busca_fsi/network/members
+[stars-shield]: https://img.shields.io/github/stars/glweber/busca_fsi.svg?style=for-the-badge
+[stars-url]: https://github.com/glweber/busca_fsi/stargazers
+[issues-shield]: https://img.shields.io/github/issues/glweber/busca_fsi.svg?style=for-the-badge
+[issues-url]: https://github.com/glweber/busca_fsi/issues
+[license-shield]: https://img.shields.io/github/license/glweber/busca_fsi.svg?style=for-the-badge
+[license-url]: https://github.com/glweber/busca_fsi/blob/master/LICENSE.txt
 [linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=for-the-badge&logo=linkedin&colorB=555
 [linkedin-url]: https://linkedin.com/in/glweber
 [product-screenshot]: src/img/screenshot.png
