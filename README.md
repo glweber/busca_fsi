@@ -136,7 +136,7 @@ After filling in the fields, when you click on the 'Gerar Mapa' button, another 
 
 When you click the 'Abrir Menu do Road Book' button, a third menu will open, allowing you to choose the starting and ending nodes (PSDP de largada e chegada, respectively), as well as the search algorithm that will be used to determine the optimal path.
 
-![alt text](/img/rodabook.png)
+![alt text](/img/roadbook.png)
 
 After selecting the desired search algorithm, the map with the optimal path will be displayed.
 
