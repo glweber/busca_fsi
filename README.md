@@ -204,7 +204,7 @@ Project Link: [https://github.com/glweber/busca_fsi](https://github.com/glweber/
 
 [linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=for-the-badge&logo=linkedin&colorB=555
 
-[linkedin-url]: https://linkedin.com/in/glweber
+[linkedin-url]: https://linkedin.com/in/gweberdesouza
 
 [product-screenshot]: src/img/screenshot.png
 
